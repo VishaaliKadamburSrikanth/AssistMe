@@ -61,14 +61,19 @@ public class MainActivity extends AppCompatActivity
                         new TransportFragment()).commit();
                 break;
 
-            case R.id.nav_help:
+            case R.id.nav_about:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new HelpFragment()).commit();
+                        new AboutFragment()).commit();
                 break;
                 
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new HomeFragment()).commit();
+                break;
+
+            case R.id.nav_faq:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FAQFragment()).commit();
                 break;
         }
 

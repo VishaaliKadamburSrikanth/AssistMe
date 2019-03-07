@@ -20,12 +20,22 @@
             android:icon="@drawable/ic_menu_transport"
             android:title="Transport" />
 
-
-
-        <item
+       <item
             android:id="@+id/nav_help"
             android:icon="@drawable/ic_menu_help"
-            android:title="Help" />
+            android:title="Help" >
+           <menu>
+               <item
+                   android:id="@+id/nav_about"
+                   android:icon="@drawable/ic_info_black_24dp"
+                   android:title="About" />
+               <item
+                   android:id="@+id/nav_faq"
+                   android:icon="@drawable/ic_live_help_black_24dp"
+                   android:title="FAQ's" />
+           </menu>
+       </item>
+
     </group>
 
    <!-- <item android:title="Communicate">
