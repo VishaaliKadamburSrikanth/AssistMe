@@ -6,16 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".AboutFragment">
 
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/about"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="#cd5c5c"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="1dp"
+        android:textColor="#000000"
+        android:text="ABOUT"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:text="The only helpful/descriptive app out there for the students landing in halifax with an aim of living the Dal Life. If you are a student coming to
+Halifax and dont have any idea of what your supposed to do before stepping into Dalhousie student life, then you hav chosen just the
+right app for help. All you need to do is to go through the options provided within the application and choose the one related to topic you have a doubt
+about. Once you make a choice, you will be redirected to all the information you need to have about that topic before/after landing in Halifax! you are good to go.
+
+The application in general is useful for all the students looking for the information on how to find accomodation, means of transportation etc. It more
+specifically targets the Dalhousie students when it comes to information about what tasks a newly accepted to accomplish before going formward with studies.
+The application has been designed in the simplest manner possible and will be easy to understand and use, for all the first time users. If in case you  still
+have any doubt roaming around in your head, feel free to visit our FAQ section to get some additional/useful information.Handcrafted By Your Fellow Dal Students With Love !!!!"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+
+
 
 </android.support.constraint.ConstraintLayout>
