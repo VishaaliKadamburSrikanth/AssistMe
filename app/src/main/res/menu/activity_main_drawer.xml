@@ -11,6 +11,12 @@
             android:title="Home" />
 
         <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_menu_help"
+            android:title="Weather" />
+
+
+        <item
             android:id="@+id/nav_accomodation"
             android:icon="@drawable/ic_menu_accomodation"
             android:title="Accomodation" />

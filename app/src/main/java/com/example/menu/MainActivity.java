@@ -59,6 +59,11 @@ public class MainActivity extends AppCompatActivity
                         new AccomodationFragment()).commit();
                 break;
 
+            case R.id.nav_weather:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new WeatherFragment()).commit();
+                break;
+
             case R.id.nav_transport:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new TransportFragment()).commit();
