@@ -4,34 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccomodationFragment">
+    tools:context=".AccomodationFragment"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGrey">
 
-    <TextView
-        android:id="@+id/textView3"
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/accomodation_details"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="#00574B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="20sp"/>
+        android:layout_height="250dp"
+        card_view:cardCornerRadius="4dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="36dp"
-        android:text="Being  an International student, meeting the accommodation and accessibility needs is important. There are various websites  like Kijiji , Airbnb which provides list of places for temporary rent or lease. They are listed below:"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="HardCodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        android:textSize="15sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:alpha="0.3"
+            app:srcCompat="@drawable/building"
+            android:contentDescription="TODO"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/accomodation_details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="#06B098"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="36dp"
+            android:text="Being  an International student, meeting the accommodation and accessibility needs is important. There are various websites  like Kijiji , Airbnb which provides list of places for temporary rent or lease.There are some places near Dalhousie University with student neighbourhood.They are: 1)Quinpool towers 2)Park Victoria 3)Quinpool court.Students could look at the websites of these and book an apartment for lease prior to their arrival.Below are some useful websites in which one coud refer."
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardCodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            android:textSize="15sp"/>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
 
 
 
@@ -40,14 +64,15 @@
         android:layout_width="339dp"
         android:layout_height="79dp"
         android:layout_gravity="bottom"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="250dp"
         android:orientation="horizontal">
 
         <Button
+
             android:id="@+id/Button"
-            android:layout_width="150dp"
+            android:layout_width="170dp"
             android:layout_height="53dp"
-            android:layout_marginBottom="550dp"
+            android:layout_marginBottom="400dp"
             android:onClick="open"
             android:text="@string/open_kijiji"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -57,21 +82,36 @@
             tools:ignore="OnClick"
             tools:layout_editor_absoluteX="7dp"
             tools:layout_editor_absoluteY="293dp" />
+
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="430dp"
+            android:onClick="open"
+            android:text="open killamreit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="OnClick" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="339dp"
-        android:layout_height="79dp"
+        android:layout_height="109dp"
         android:layout_gravity="bottom"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="310dp"
         android:orientation="horizontal">
 
 
         <Button
             android:id="@+id/Button1"
-            android:layout_width="150dp"
+            android:layout_width="170dp"
             android:layout_height="53dp"
-            android:layout_marginBottom="550dp"
+            android:layout_marginBottom="430dp"
             android:onClick="open"
             android:text="@string/open_airbnb"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -79,17 +119,20 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="430dp"
+            android:onClick="open"
+            android:text="open capreit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="OnClick" />
+
     </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="290dp"
-        android:orientation="horizontal"
-        android:text="There are some places near Dalhousie University with student neighbourhood.They are: 1)Quinpool towers 2)Park Victoria 3)Quinpool court.Students could look at the websites of these and book an apartment for lease prior to their arrival."
-        android:textColor="#000000"
-        android:textSize="15sp"/>
 
 </RelativeLayout>

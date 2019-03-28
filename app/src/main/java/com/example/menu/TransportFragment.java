@@ -10,10 +10,13 @@ import android.view.ViewGroup;
 import android.view.View;
 import android.widget.Button;
 
+
 public class TransportFragment extends Fragment {
+    private Button button;
 
     @Nullable
     @Override
+
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstance) {
         return inflater.inflate(R.layout.fragment_transport, container, false);
     }
@@ -22,7 +25,7 @@ public class TransportFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        Button btn_off4 = (Button) getActivity().findViewById(R.id.Button2);
+        Button btn_off4 = (Button) getActivity().findViewById(R.id.Button4);
         btn_off4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,5 +37,26 @@ public class TransportFragment extends Fragment {
         });
 
     }
-}
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel: 902_410_7415"));
+        startActivity(callIntent);
+            }
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
 

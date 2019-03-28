@@ -4,24 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlack">
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="3dp"
-        android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:text="Want to book a Taxi? Looking for lower rates?"/>
+    android:background="@color/colorGrey">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="180dp"
         app:srcCompat="@drawable/taxi"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="1dp"
         android:contentDescription="TODO" />
 
     <LinearLayout
@@ -31,20 +20,53 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Halifax Airport Cab provides taxi services from and to Halifax Airport economical and on time around the region of Atlantic Canada.The details of the route and fare details are given in the link below:"
+            android:text="Halifax Airport Cab provides taxi services from and to Halifax Airport economical and on time around the region of Atlantic Canada.The details are given below:"
             android:textColor="#ffffff"
             android:textSize="15sp" />
 
 
     </LinearLayout>
 
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="280dp">
+        <TableRow>
+            <TextView
+                android:text="Area"
+                android:padding="3dip" />
+            <TextView
+                android:text="From Airport"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Halifax"
+                android:padding="3dip" />
+            <TextView
+                android:text="$63 (in cad)"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
 
 
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
+        android:text="For further details,Click Open halifax airport cab "
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
     <Button
-        android:id="@+id/Button2"
+        android:id="@+id/Button4"
         android:layout_width="250dp"
         android:layout_height="53dp"
         android:onClick="open"
@@ -54,5 +76,29 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:ignore="OnClick"
-        android:layout_marginTop="300dp"/>
+        android:layout_marginTop="390dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="450dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Want to book a Taxi? Looking for lower rates?"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="call +1 902-410-7415" />
+
+    </LinearLayout>
 </RelativeLayout>
