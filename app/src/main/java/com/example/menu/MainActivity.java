@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity
     private DrawerLayout drawer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+System.out.println("test");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
