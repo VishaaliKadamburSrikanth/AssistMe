@@ -47,5 +47,30 @@ public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         }
     });
 
+    Button btn_off4 = (Button) getActivity().findViewById(R.id.Button2);
+    btn_off4.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("https://www.caprent.com/apartments-for-rent/halifax-ns/harbour-view/\n"));
+            getActivity().startActivity(i);
+
+        }
+    });
+
+
+    Button btn_off5= (Button) getActivity().findViewById(R.id.Button3);
+    btn_off5.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse("https://killamreit.com/\n"));
+            getActivity().startActivity(i);
+
+        }
+    });
+
 }
+
 }
+

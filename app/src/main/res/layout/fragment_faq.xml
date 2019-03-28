@@ -7,15 +7,49 @@
     tools:context=".FAQFragment">
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/faq"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:textColor="#cd5c5c"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:id="@+id/textView7"
+        android:layout_marginTop="1dp"
+        android:text="FREQUENTLY ASKED QUESTIONS"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:text="Q 1) What happens at the airport ?
+-> Remember to bring all your documents with you including, Letter Of Acceptance, GIC certificate, Transcripts of previous schools attended and ofcourse your
+passport. Present all the documents demanded by the immigration officer. Once satisfied, he/she will issue you your study permit.
+
+Q 2) How can I activate my GIC account?
+-> Go to any nearby branch of the bank in which you have applied for GIC account. Take your passport, study permit and  University issued Letter
+Of Acceptance. Ask any of the employees attending you to activate the account and they will take care of the rest.
+
+Q 3) Where can I get my student ID ?
+-> You need to go to DalCard Office located at coberg Road. You need to have a valid government-issued photo ID with you.
+
+Q 4) Where can I get my Bus Pass ?
+-> As a student you need not get one. You will be using your Dalhousie ID as Bus Pass.
+
+Q5) Where can I get my SIN number ?
+-> Go to Service Canada with a valid government-issued photo ID and get your SIN number made. You will need to tell them the address the place
+you are currently living in along with the postal code.
+
+Q6) Can I work On and Off campus ?
+-> Generally you can but it is advised to consult the international student advisor in the university about it.
+
+Q7) How many hours am I allowed to work ?
+-> 20 hours/week during study time and upto 40 hours/weel during study break.
+
+Q8) Where can I get the books required for my course ?
+-> Killiam library is the place to go. Its located near Henry Hicks building."
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+
+
 
 </android.support.constraint.ConstraintLayout>
