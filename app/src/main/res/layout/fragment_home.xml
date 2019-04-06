@@ -2,12 +2,85 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright">
-    <TextView
-        android:layout_width="wrap_content"
+    android:background="#EBF0E9">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        card_view:cardCornerRadius="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/halifax">
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Home"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        />
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="22dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_below="@+id/card_view"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Welcome students!"
+            android:fontFamily="noto_sans_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:id="@+id/halidesc"
+                android:text="Halifax is the major economic center in Atlantic Canada which is the provincial capital of Nova Scotia. Halifax is one of the warmest and affordable place in Canada. The finest quality of education provided at Dalhousie University attracts huge number of international students to Halifax. "
+                android:fontFamily="noto_sans_bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/halidesc"
+                android:text="Dalhousie University"
+                android:id="@+id/dal"
+                android:textAlignment="viewStart"
+                android:fontFamily="noto_sans_bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/dal"
+                android:text="Dalhousie University is one of the largest university with 3 campuses in Halifax city. The university was established in 1818 and is one of the oldest university in Canada. It is one of the top ranked univeristy in Canada."
+                android:textAlignment="viewStart"
+                android:fontFamily="noto_sans_bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
 </RelativeLayout>

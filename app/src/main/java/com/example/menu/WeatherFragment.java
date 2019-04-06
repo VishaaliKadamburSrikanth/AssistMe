@@ -1,11 +1,19 @@
 package com.example.menu;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -32,21 +40,26 @@ import lecho.lib.hellocharts.model.PointValue;
 import lecho.lib.hellocharts.view.LineChartView;
 
 public class WeatherFragment extends Fragment {
-
+    ActionBarDrawerToggle mDrawerToggle;
+    DrawerLayout drawerLayout;
     @Nullable
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstance)
     {
+
         return inflater.inflate(R.layout.fragment_weather, container, false);
     }
 
     TextView cityName_TextView, desc_TextView, temp_TextView;
-    String city, temp, desc;
+    String city, desc;
+    int temp;
     LineChartView chartView;
+
+    //Average temperature values taken from official website to depict in graph
 
     String[] monthValue = {"Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept",
             "Oct", "Nov", "Dec"};
-    int[] maxTemp = {-4, -5 , -5, -4, 5, 10, 12, 20, 21, 11, 10, 8};
-    int[] minTemp = {-1, -2 , -2, -1, 2, 15, 14, 24, 25, 18, 11, 7};
+    int[] maxTemp = {0, 0 , 4, 9, 14, 20, 23, 23, 19, 13, 8, 3};
+    int[] minTemp = {-8, -10 , -4, 1, 6, 11, 14, 15, 12,6, 1, -4};
 
 
     @Override
@@ -63,7 +76,7 @@ public class WeatherFragment extends Fragment {
         getWeatherData();
 
         //fetch history data
-       getGraph();
+        getGraph();
 
     }
 
@@ -74,14 +87,14 @@ public class WeatherFragment extends Fragment {
 
         // Add values for max temp
         List max = new ArrayList();
-        Line maxTempLine = new Line(max).setColor(Color.parseColor("#FF131010"));
+        Line maxTempLine = new Line(max).setColor(Color.parseColor("#540B94"));
         for (int i = 0; i < maxTemp.length; i++) {
             max.add(new PointValue(i, maxTemp[i]));
         }
 
         // Add values for min temp
         List min = new ArrayList();
-        Line minTempLine = new Line(min).setColor(Color.parseColor("#FF131010"));
+        Line minTempLine = new Line(min).setColor(Color.parseColor("#000000"));
         for (int i = 0; i < minTemp.length; i++) {
             min.add(new PointValue(i, minTemp[i]));
         }
@@ -97,21 +110,23 @@ public class WeatherFragment extends Fragment {
         addList.add(maxTempLine);
         addList.add(minTempLine);
 
-        //Populate lines in chart
+        // Populate lines in chart
         LineChartData chartData = new LineChartData();
         chartData.setLines(addList);
 
-        //Populate x axis
+        // Populate x axis
         Axis Xaxis = new Axis();
         Xaxis.setValues(months);
+        Xaxis.setTextColor(Color.parseColor("#000000"));
         chartData.setAxisXBottom(Xaxis);
 
-        //Populate y axis
+        // Populate y axis
         Axis Yaxis = new Axis();
         Yaxis.setName("Temperature");
+        Yaxis.setTextColor(Color.parseColor("#000000"));
         chartData.setAxisYLeft(Yaxis);
 
-        //Render chart View
+        // Render chart View
         chartView.setLineChartData(chartData);
 
     }
@@ -119,9 +134,10 @@ public class WeatherFragment extends Fragment {
     public void getWeatherData()
     {
 
+        // API call to open weather for fetching current weather of halifax
         String api_url = "https://api.openweathermap.org/data/2.5/weather?q=Halifax&appid=c201d09ff627c1ce09e63d130abf07db&units=metric";
 
-        //Fetching the response and mapping
+        // Fetching the response and mapping
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, api_url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -133,7 +149,7 @@ public class WeatherFragment extends Fragment {
                     JSONObject object = weather.getJSONObject(0);
 
                     city = response.getString("name");
-                    temp = main.getString("temp");
+                    temp = main.getInt("temp");
                     desc = object.getString("main");
 
                     System.out.println(temp);
@@ -157,9 +173,8 @@ public class WeatherFragment extends Fragment {
             }
         }
         );
-    RequestQueue queue = Volley.newRequestQueue(getContext());
-    queue.add(request);
+        RequestQueue queue = Volley.newRequestQueue(getContext());
+        queue.add(request);
 
     }
 }
-
