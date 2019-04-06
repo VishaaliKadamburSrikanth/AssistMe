@@ -32,5 +32,32 @@ public class HomeFragment extends Fragment {
 
         super.onActivityCreated(savedInstanceState);
 
+        //displaying hamburger icon in the menu bar
+        actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        actionBar.setTitle("Home");
+        drawer = (DrawerLayout) getActivity().findViewById(R.id.drawer_layout);
+        toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            toggle = new ActionBarDrawerToggle(
+                    getActivity(), drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            toggle.syncState();
+            drawer.setDrawerListener(toggle);
+            getActivity().getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+                @Override
+                public void onBackStackChanged() {
+                        actionBar.setDisplayHomeAsUpEnabled(false);
+                        toggle.syncState();
+                        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                drawer.openDrawer(GravityCompat.START);
+                            }
+                        });
+
+                }
+            });
+
+
+        }
     }
 }

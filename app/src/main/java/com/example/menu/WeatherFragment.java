@@ -1,6 +1,5 @@
 package com.example.menu;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -40,8 +38,8 @@ import lecho.lib.hellocharts.model.PointValue;
 import lecho.lib.hellocharts.view.LineChartView;
 
 public class WeatherFragment extends Fragment {
-    ActionBarDrawerToggle mDrawerToggle;
-    DrawerLayout drawerLayout;
+    ActionBarDrawerToggle drawToggle;
+    DrawerLayout drawLayout;
     @Nullable
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstance)
     {
@@ -66,6 +64,24 @@ public class WeatherFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
 
         super.onActivityCreated(savedInstanceState);
+
+        //adding back button in the action bar
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        actionBar.setTitle("Weather");
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        drawLayout = (DrawerLayout)getActivity().findViewById(R.id.drawer_layout);
+        drawToggle = new ActionBarDrawerToggle(getActivity(), drawLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawLayout.setDrawerListener(drawToggle);
+        drawToggle.syncState();
+        drawToggle.setDrawerIndicatorEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        drawToggle.setToolbarNavigationClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawLayout.openDrawer(GravityCompat.START);
+            }
+        });
 
         //Textviews
         cityName_TextView = getActivity().findViewById(R.id.cityName);

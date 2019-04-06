@@ -73,7 +73,11 @@ public class MainActivity extends AppCompatActivity
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new AboutFragment()).commit();
                 break;
-                
+
+            case R.id.nav_thingstodo:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ThingsToDoFragment()).commit();
+                break;
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new HomeFragment()).commit();

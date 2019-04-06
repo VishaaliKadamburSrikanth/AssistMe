@@ -16,6 +16,7 @@
             android:title="Weather" />
 
 
+
         <item
             android:id="@+id/nav_accomodation"
             android:icon="@drawable/ic_menu_accomodation"
@@ -26,6 +27,11 @@
             android:icon="@drawable/ic_menu_transport"
             android:title="Transport" />
 
+        <item
+            android:id="@+id/nav_thingstodo"
+            android:icon="@drawable/ic_menu_list"
+            android:title="Things to do"/>
+        
        <item
             android:id="@+id/nav_help"
             android:icon="@drawable/ic_menu_help"

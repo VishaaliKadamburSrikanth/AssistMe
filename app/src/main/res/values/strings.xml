@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Halifax Info</string>
+    <string name="app_name">Assist ME</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Halifax Info</string>
@@ -52,5 +52,40 @@ Q8) Where can I get the books required for my course ?
 -> Killiam library is the place to go. Its located near Henry Hicks building.
 
 </string>
+    <string name="list">
+        <li style="font-weight : bold;">Q 1) What happens at the airport ?</li>\n
+        <li>-> Remember to bring all your documents with you including, Letter Of Acceptance, GIC certificate, Transcripts of previous schools attended and ofcourse your
+passport. Present all the documents demanded by the immigration officer. Once satisfied, he/she will issue you your study permit.
+</li>\n\n
+        <li>Q 2) How can I activate my GIC account?</li>\n
+        <li>-> Go to any nearby branch of the bank in which you have applied for GIC account. Take your passport, study permit and  University issued Letter
+Of Acceptance. Ask any of the employees attending you to activate the account and they will take care of the rest.
+</li>\n\n
+        <li>Q 3)Where can I get my student ID ?</li>\n
+        <li>You need to go to DalCard Office located at coberg Road. You need to have a valid government-issued photo ID with you.
+</li>\n\n
+        <li>Q 4) Where can I get my Bus Pass ?</li>\n
+        <li>-> As a student you need not get one. You will be using your Dalhousie ID as Bus Pass.</li>\n\n
 
+        <li>Q5) Where can I get my SIN number ?</li>\n
+        <li>Go to Service Canada with a valid government-issued photo ID and get your SIN number made. You will need to tell them the address the place
+you are currently living in along with the postal code.</li>\n\n
+        <li>Q6) Can I work On and Off campus ?</li>\n
+        <li>-> Generally you can but it is advised to consult the international student advisor in the university about it.</li>\n\n
+        <li>Q7) How many hours am I allowed to work ?</li>\n
+        <li>-> 20 hours/week during study time and upto 40 hours/weel during study break.</li>\n\n
+
+    </string>
+
+
+    <string name="html">
+        <![CDATA[
+        <li><h1>Q 1) What happens at the airport ?</h1></li><br>
+        <li>Remember to bring all your documents with you including, Letter Of Acceptance, GIC certificate, Transcripts of previous schools attended and ofcourse your
+        passport. Present all the documents demanded by the immigration officer. Once satisfied, he/she will issue you your study permit.</li><br>
+        <li><h1>Q 1) What happens at the airport ?</h1></li><br>
+        <li>Remember to bring all your documents with you including, Letter Of Acceptance, GIC certificate, Transcripts of previous schools attended and ofcourse your
+        passport. Present all the documents demanded by the immigration officer. Once satisfied, he/she will issue you your study permit.</li><br>
+        ]]>
+    </string>
 </resources>

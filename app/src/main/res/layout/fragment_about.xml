@@ -1,41 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#EBF0E9"
     android:layout_height="match_parent"
     tools:context=".AboutFragment">
 
-
-    <TextView
-        android:id="@+id/textView5"
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="1dp"
-        android:textColor="#000000"
-        android:text="ABOUT"
-        android:textSize="15sp"
-        />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardElevation="15dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="20dp"
+        card_view:contentPadding="10dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="24dp"
-        android:text="The only helpful/descriptive app out there for the students landing in halifax with an aim of living the Dal Life. If you are a student coming to
-Halifax and dont have any idea of what your supposed to do before stepping into Dalhousie student life, then you hav chosen just the
-right app for help. All you need to do is to go through the options provided within the application and choose the one related to topic you have a doubt
-about. Once you make a choice, you will be redirected to all the information you need to have about that topic before/after landing in Halifax! you are good to go.
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:text="The only helpful/descriptive app out there for the students landing in halifax with an aim of living the Dal Life. If you are a student coming to Halifax and dont have any idea of what your supposed to do before stepping into Dalhousie student life, then you hav chosen just the right app for help.
+All you need to do is to go through the options provided within the application and choose the one related to topic you have a doubt about. Once you make a choice, you will be redirected to all the information you need to have about that topic before/after landing in Halifax! you are good to go.
 
-The application in general is useful for all the students looking for the information on how to find accomodation, means of transportation etc. It more
-specifically targets the Dalhousie students when it comes to information about what tasks a newly accepted to accomplish before going formward with studies.
-The application has been designed in the simplest manner possible and will be easy to understand and use, for all the first time users. If in case you  still
-have any doubt roaming around in your head, feel free to visit our FAQ section to get some additional/useful information.Handcrafted By Your Fellow Dal Students With Love !!!!"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+The application in general is useful for all the students looking for the information on how to find accomodation, means of transportation etc.
+It more specifically targets the Dalhousie students when it comes to information about what tasks a newly accepted to accomplish before going forward with studies.
+The application has been designed in the simplest manner possible and will be easy to understand and use, for all the first time users.
+If in case you  still have any doubt roaming around in your head, feel free to visit our FAQ section to get some additional/useful information.
+Handcrafted By Your Fellow Dal Students With Love !!!!"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
 
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
-
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

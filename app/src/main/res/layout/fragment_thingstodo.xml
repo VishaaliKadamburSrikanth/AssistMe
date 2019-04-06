@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="#EBF0E9"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headingdesc"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text= "Every student is required to obtain the below mentioned unique identifiers during their course of study in Halifax. As each has its own significance it is important to have them during their tenure in Halifax."
+        android:gravity="clip_horizontal"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"/>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        cardElevation="15dp"
+        cardUseCompatPadding="true"
+        android:layout_height="wrap_content"
+        android:layout_width="420dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        android:layout_below="@id/headingdesc">
+
+        <LinearLayout
+            android:id="@+id/NSIDborder"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headingdesc"
+            android:layout_alignStart="@+id/card_view1"
+            android:orientation="horizontal"
+            android:padding= "10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nsidtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text="NSID"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nsidtext"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text="Nova Scotia ID serves as an identification to visit age-restricted places and to buy age-restricted products in Halifax. In order to obtain it, one needs to visit Access Nova Scotia with their Passport, study permit  and some cash in hand ($17.70 approx)."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:padding = "8dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nsidButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="noto_sans_bold"
+                android:text="LOCATE"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        cardElevation="15dp"
+        cardUseCompatPadding="true"
+        android:layout_height="wrap_content"
+        android:layout_width="420dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        android:layout_below="@id/card_view1">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:id="@+id/sinBorder"
+            android:layout_height="wrap_content"
+            android:padding= "10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text= "SIN"
+                    android:id="@+id/sinHeading"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sinHeading"
+                    android:id="@+id/sinText"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text="Social Insurance Number is necessary for students in order to do part time job for 20 hours per week during their school and they are allowed to work full time during university breaks. SIN should be kept very secured and should not be shared with anyone."
+                    android:gravity="clip_horizontal"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="noto_sans_bold"
+                android:id="@+id/sinButton"
+                android:text="LOCATE"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        cardElevation="15dp"
+        cardUseCompatPadding="true"
+        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        android:layout_below="@id/card_view2">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:id="@+id/dalBorder"
+            android:layout_height="wrap_content"
+            android:padding= "10dp">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text= "DAL ID"
+                    android:gravity="clip_horizontal"
+                    android:id="@+id/dalHeading"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dalHeading"
+                    android:id="@+id/dalText"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text="Dalhousie issues ID card for their students with Upass attestation which can be used as a bus pass during their local commute."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    android:padding="8dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="noto_sans_bold"
+                android:id="@+id/dalButton"
+                android:text="LOCATE"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
