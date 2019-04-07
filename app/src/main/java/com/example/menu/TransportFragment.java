@@ -33,7 +33,7 @@ public class TransportFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         actionBar.setTitle("Transport");
-       //adding back button in the action bar
+        //adding back button in the action bar
         Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         drawLayout = (DrawerLayout)getActivity().findViewById(R.id.drawer_layout);
@@ -50,6 +50,7 @@ public class TransportFragment extends Fragment {
         });
 
         Button btn_off4 = (Button) getActivity().findViewById(R.id.Button4);
+        Button call = (Button) getActivity().findViewById(R.id.button5);
         btn_off4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,20 +61,20 @@ public class TransportFragment extends Fragment {
             }
         });
 
-    }
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel: 902_410_7415"));
-        startActivity(callIntent);
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel: 902_410_7415"));
+                startActivity(callIntent);
+
             }
+        });
+
+    }
+}
 
 
-
-
-
-        }
 
 
 
