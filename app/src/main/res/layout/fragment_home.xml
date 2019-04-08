@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:layout_below="@+id/dal"
-                android:text="Dalhousie University is one of the largest university with 3 campuses in Halifax city. The university was established in 1818 and is one of the oldest university in Canada. It is one of the top ranked univeristy in Canada."
+                android:text="Dalhousie University is one of the largest university with 3 campuses in Nova Scotia. The university was established in 1818 and is one of the oldest university in Canada. It is one of the top ranked univeristy in Canada."
                 android:textAlignment="viewStart"
                 android:fontFamily="noto_sans_bold"
                 android:textColor="@color/colorBlack"

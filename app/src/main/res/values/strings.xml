@@ -54,26 +54,26 @@ Q8) Where can I get the books required for my course ?
 </string>
     <string name="list">
         <li style="font-weight : bold;">Q 1) What happens at the airport ?</li>\n
-        <li>-> Remember to bring all your documents with you including, Letter Of Acceptance, GIC certificate, Transcripts of previous schools attended and ofcourse your
+        <li style="font-weight : bold;"> -> Remember to bring all your documents with you including, Letter Of Acceptance, GIC certificate, Transcripts of previous schools attended and ofcourse your
 passport. Present all the documents demanded by the immigration officer. Once satisfied, he/she will issue you your study permit.
 </li>\n\n
-        <li>Q 2) How can I activate my GIC account?</li>\n
-        <li>-> Go to any nearby branch of the bank in which you have applied for GIC account. Take your passport, study permit and  University issued Letter
+        <li style="font-weight : bold;">Q 2) How can I activate my GIC account?</li>\n
+        <li style="font-weight : bold;"> -> Go to any nearby branch of the bank in which you have applied for GIC account. Take your passport, study permit and  University issued Letter
 Of Acceptance. Ask any of the employees attending you to activate the account and they will take care of the rest.
 </li>\n\n
-        <li>Q 3)Where can I get my student ID ?</li>\n
-        <li>You need to go to DalCard Office located at coberg Road. You need to have a valid government-issued photo ID with you.
+        <li style="font-weight : bold;">Q 3) Where can I get my student ID ?</li>\n
+        <li style="font-weight : bold;"> -> You need to go to DalCard Office located at coberg Road. You need to have a valid government-issued photo ID with you.
 </li>\n\n
-        <li>Q 4) Where can I get my Bus Pass ?</li>\n
-        <li>-> As a student you need not get one. You will be using your Dalhousie ID as Bus Pass.</li>\n\n
+        <li style="font-weight : bold;">Q 4) Where can I get my Bus Pass ?</li>\n
+        <li style="font-weight : bold;"> -> As a student you need not get one. You will be using your Dalhousie ID as Bus Pass.</li>\n\n
 
-        <li>Q5) Where can I get my SIN number ?</li>\n
-        <li>Go to Service Canada with a valid government-issued photo ID and get your SIN number made. You will need to tell them the address the place
+        <li style="font-weight : bold;">Q 5) Where can I get my SIN number ?</li>\n
+        <li style="font-weight : bold;"> -> Go to Service Canada with a valid government-issued photo ID and get your SIN number made. You will need to tell them the address the place
 you are currently living in along with the postal code.</li>\n\n
-        <li>Q6) Can I work On and Off campus ?</li>\n
-        <li>-> Generally you can but it is advised to consult the international student advisor in the university about it.</li>\n\n
-        <li>Q7) How many hours am I allowed to work ?</li>\n
-        <li>-> 20 hours/week during study time and upto 40 hours/weel during study break.</li>\n\n
+        <li style="font-weight : bold;">Q 6) Can I work On and Off campus ?</li>\n
+        <li style="font-weight : bold;"> -> Generally you can but it is advised to consult the international student advisor in the university about it.</li>\n\n
+        <li style="font-weight : bold;">Q 7) How many hours am I allowed to work ?</li>\n
+        <li style="font-weight : bold;"> -> 20 hours/week during study time and upto 40 hours/weel during study break.</li>\n\n
 
     </string>
 
