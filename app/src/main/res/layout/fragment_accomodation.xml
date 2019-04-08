@@ -7,14 +7,12 @@
     tools:context=".AccomodationFragment"
     android:layout_height="match_parent">
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
         android:fontFamily="@font/noto_sans_bold"
-        android:text="Being  an International student, meeting the accommodation and accessibility needs is important. There are various websites  like Kijiji , Airbnb which provides list of places for temporary rent or lease.There are some places near Dalhousie University with student neighbourhood.Below are some useful websites in which one could refer."
+        android:text="Being  an International student, meeting the accommodation and accessibility needs is important. There are various websites  like Kijiji , Airbnb which provides list of places for temporary rent or lease. Below are some useful websites in which one could refer."
         android:gravity="clip_horizontal"
         android:layout_marginLeft="20dp"
         android:textColor="@color/colorBlack"
@@ -117,7 +115,7 @@
 
         <LinearLayout
             android:id="@+id/Airbnbborder"
-            android:layout_width="wrap_content"
+            android:layout_width="415dp"
             android:layout_height="wrap_content"
             android:padding="1dp">
 
