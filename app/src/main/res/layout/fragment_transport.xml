@@ -4,21 +4,22 @@
     android:layout_width="wrap_content"
     android:background="#EBF0E9"
     android:layout_height="match_parent">
-
-
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/taxi"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
         android:fontFamily="@font/noto_sans_bold"
-        android:text="Halifax Airport Cab is one of the most cost effective cab services that is readily available at Halifax Stanfield International Airport.Pre-booking is available through online and instant pickups are also available."
+        android:text="Halifax Airport Cab is one of the most cost effective cab services that is readily available at Halifax Stanfield International airport. Prebooking are available through online and instant pick of the cabs are also available."
         android:gravity="clip_horizontal"
         android:layout_marginLeft="20dp"
         android:textColor="@color/colorBlack"
         android:textSize="15dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="230dp"/>
 
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -30,7 +31,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="357dp"
         card_view:cardCornerRadius="4dp"
         card_view:cardBackgroundColor="@android:color/transparent"
         >
@@ -67,22 +68,17 @@
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/custom_button"
                 android:fontFamily="noto_sans_bold"
                 android:onClick="open"
                 android:text="call"
-                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="10dp" />
 
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
-
-
-
-
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card_view2"
@@ -93,7 +89,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         card_view:cardCornerRadius="4dp"
         card_view:cardBackgroundColor="@android:color/transparent"
         android:layout_below="@id/card_view1">
@@ -137,6 +133,7 @@
                 android:textSize="10dp"
                 tools:ignore="OnClick" />
 
+
         </LinearLayout>
 
 
@@ -144,5 +141,16 @@
 
     </android.support.v7.widget.CardView>
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view2"
+        android:id="@+id/rates"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="NOTE : The expected fare of the cab from and to Halifax Stanfield International Airport is around 55$-63$. It also depends on the number of baggages carried. "
+        android:gravity="clip_horizontal"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"/>
 </RelativeLayout>
