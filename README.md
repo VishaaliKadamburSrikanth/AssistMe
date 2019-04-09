@@ -13,8 +13,10 @@ Assist ME is an informative app primarily developed for Dalhousie International 
 We  have implemented two Application programming interface in our project . One is Open weather API and the other Google maps API.
 1. com.android.volley:volley:1.1.1
 This is library is used in weather fragment for establishing http request and response in OpenweatherAPI.
+Source - (https://mvnrepository.com/artifact/com.android.volley/volley/1.1.0)
 2.com.github.lecho:hellocharts-library:1.5.8
 This library is used in weather fragment for creating line graphs which depicts the history of temperature ranges in past year.
+Source - (https://mvnrepository.com/artifact/com.github.lecho/hellocharts-library/1.5.2)
 3. com.google.android.gms:play-services-maps:11.0.2: - Used for displaying google maps in the Map activity.
 Source - (https://mvnrepository.com/artifact/com.google.android.gms/play-services-maps/11.0.2)
 4. com.google.android.gms:play-services-location:11.0.2: - Used for finding the current location of a user and displaying locations of the places mentioned in “Things to do” Fragment.
@@ -101,8 +103,6 @@ Initially the app name was displayed on each fragment on the action bar. But On 
         });
 
 ## Feature Section
-
-Assist ME mainly focuses on international students coming to Halifax, Canada for the first time.Assist ME enriches and guides them with various things like weather details, accommodation details, Transport details, NSID, SIN and DAL card details. The application also has about and frequently asked question section which gives some of the basic answers to questions which most students want to know about. We have implemented Open weather API to fetch the current weather and Google maps API to give the location of the places where the NSID, SIN and Dal card were issued. The application also has a call feature to Halifax Airport Cab which is one of the most cost-effective cab facility.
 
 ###Weather feature:
 Our application will fetch the current and history of weather data (one year) of Halifax. The user will be able to see the history weather data in the form of line graph that shows the maximum and minimum temperature range over the past year.
