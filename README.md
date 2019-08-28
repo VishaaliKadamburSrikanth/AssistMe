@@ -1,13 +1,6 @@
 # AssitmMe
 Assist ME is an informative app primarily developed for Dalhousie International Students who are new to Halifax. A prospective student will have many responsibilities to be completed before their course begins and as a student in a foreign country getting to know about their responsibilities and completing them will be overwhelming for them. Hence to help them overcome this situation our app will provide all the necessary information that the student is supposed to know and the necessary steps to attain them. The app landing page has home screen which provides a background information about Dalhousie and Halifax. A user can know about current weather details and the past climatic conditions of Halifax using weather feature of the app. We also provide list of tasks to be completed by a student like obtaining mandatory unique identifiers such as SIN, NSID and Dal ID card and respective locations to obtain them. Upon selecting the specific location, user’s current location is received and the locations to acquire necessary ID cards will be displayed using Google Maps API. The transport feature of our app will help the users with appropriate information for commuting from airport to their desired location. A user can find vacant apartments once he lands in Halifax using Accommodation functionality.
 
-## Installation Notes
-1. Installation - Not required
-2. Get code from our repo [git clone https://github.com/VishaaliKadamburSrikanth/AssistMe.git]
-3. Import it into Android Studio
-4. Run the application
-5. Choose the android Emulator.
-
 ## Feature Section
 ### Weather feature
 Our application will fetch the current and history of weather data (one year) of Halifax. The user will be able to see the history weather data in the form of line graph that shows the maximum and minimum temperature range over the past year.
@@ -26,6 +19,13 @@ Our application enriches the user with the list of to-do’s that must be comple
 1.Nearby Places can be implemented using Google API.
 2.Forum Implementation can be done from which user can attain knowledge by interacting with other students
 3.List of required tasks to be completed by a student can be added as a checklist.
+
+## Installation Notes
+1. Installation - Not required
+2. Get code from our repo [git clone https://github.com/VishaaliKadamburSrikanth/AssistMe.git]
+3. Import it into Android Studio
+4. Run the application
+5. Choose the android Emulator.
 
 ## Libraries
 1. com.android.volley:volley:1.1.1
@@ -56,9 +56,7 @@ Source- (https://mvnrepository.com/artifact/com.android.support/appcompat-v7/28.
 7. testImplementation ‘junit:junit:4.12' - This library is used to write unit test cases in our application.
 Source - (https://mvnrepository.com/artifact/junit/junit/4.12)
 
-
 ## Reference
-
 [1] Location and Maps | Android Developers. (2018). Retrieved from
 https://developer.android.com/guide/topics/location/#maps.
 
