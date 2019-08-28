@@ -22,7 +22,7 @@ Our application enriches the user with the list of to-do’s that must be comple
 
 ## Installation Notes
 1. Installation - Not required
-2. Get code from our repo [git clone https://github.com/VishaaliKadamburSrikanth/AssistMe.git]
+2. Get code from our repo [git clone https://github.com/VishaaliKadamburSrikanth/AssistMe.git
 3. Import it into Android Studio
 4. Run the application
 5. Choose the android Emulator.
