@@ -16,9 +16,9 @@ User can readily call the Halifax Airport Cab service providers and book the cab
 Our application enriches the user with the list of to-do’s that must be completed during study. The significance of each unique identifiers is given along with the location where it must be obtained. The current location of the user is accessed by google maps to provide direction to the destinations like Access Nova Scotia, Service Canada and Dalhousie Office.
 
 ## Future Enhancements
-1.Nearby Places can be implemented using Google API.
-2.Forum Implementation can be done from which user can attain knowledge by interacting with other students
-3.List of required tasks to be completed by a student can be added as a checklist.
+- Nearby Places can be implemented using Google API.
+- Forum Implementation can be done from which user can attain knowledge by interacting with other students
+- List of required tasks to be completed by a student can be added as a checklist.
 
 ## Installation Notes
 1. Installation - Not required
